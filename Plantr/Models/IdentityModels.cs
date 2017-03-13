@@ -20,6 +20,9 @@ namespace Plantr.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Soul> Souls { get; set; }
+        public DbSet<Course> Courses { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
