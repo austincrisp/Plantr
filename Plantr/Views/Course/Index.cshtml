@@ -1,0 +1,123 @@
+﻿@model IEnumerable<Plantr.Models.Course>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseOneSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseOneRec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseTwoSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseTwoRec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseThreeSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseThreeRec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseFourSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseFourRec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseFiveSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseFiveRec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseSixSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseSixRec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseSevenSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseSevenRec)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseEightSent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseEightRec)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseOneSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseOneRec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseTwoSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseTwoRec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseThreeSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseThreeRec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseFourSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseFourRec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseFiveSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseFiveRec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseSixSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseSixRec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseSevenSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseSevenRec)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseEightSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourseEightRec)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
