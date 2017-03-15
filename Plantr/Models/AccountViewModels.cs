@@ -49,7 +49,7 @@ namespace Plantr.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Username")]
+        [Display(Name = "Name")]
         public string Username { get; set; }
 
         [Required]
@@ -64,7 +64,7 @@ namespace Plantr.Models
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "Username")]
+        [Display(Name = "Name")]
         public string Username { get; set; }
 
         [Required]

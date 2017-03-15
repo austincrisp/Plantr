@@ -20,7 +20,7 @@ namespace Plantr.Models
         public int Zip { get; set; }
         public string Phone { get; set; }
 
-        // Physical visit
-        public bool wasVisited { get; set; }
+        // Additional Comments
+        public string Comments { get; set; }
     }
 }

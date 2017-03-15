@@ -189,6 +189,10 @@
     <Compile Include="Migrations\201703141640324_Initial.Designer.cs">
       <DependentUpon>201703141640324_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703150211114_AddedComments.cs" />
+    <Compile Include="Migrations\201703150211114_AddedComments.Designer.cs">
+      <DependentUpon>201703150211114_AddedComments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
@@ -201,13 +205,16 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\form.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -278,6 +285,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703141640324_Initial.resx">
       <DependentUpon>201703141640324_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703150211114_AddedComments.resx">
+      <DependentUpon>201703150211114_AddedComments.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
