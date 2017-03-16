@@ -1,76 +1,88 @@
-﻿@model Plantr.Models.SoulCourse
+﻿@model Tuple<Plantr.Models.Soul,Plantr.Models.Course>
 
 <div>
     <h4>Soul</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
+            @Html.DisplayNameFor(tuple => tuple.Item1.FirstName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.FirstName)
+            @Html.DisplayFor(tuple => tuple.Item1.FirstName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => Model.Soul.LastName)
+            @Html.DisplayNameFor(tuple => tuple.Item1.LastName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => Model.Soul.LastName)
+            @Html.DisplayFor(tuple => tuple.Item1.LastName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => Model.Soul.Address)
+            @Html.DisplayNameFor(tuple => tuple.Item1.Address)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => Model.Soul.Address)
+            @Html.DisplayFor(tuple => tuple.Item1.Address)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => Model.Soul.AptNumber)
+            @Html.DisplayNameFor(tuple => tuple.Item1.AptNumber)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => Model.Soul.AptNumber)
+            @Html.DisplayFor(tuple => tuple.Item1.AptNumber)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => Model.Soul.City)
+            @Html.DisplayNameFor(tuple => tuple.Item1.City)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => Model.Soul.City)
+            @Html.DisplayFor(tuple => tuple.Item1.City)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => Model.Soul.Zip)
+            @Html.DisplayNameFor(tuple => tuple.Item1.Zip)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => Model.Soul.Zip)
+            @Html.DisplayFor(tuple => tuple.Item1.Zip)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => Model.Soul.Phone)
+            @Html.DisplayNameFor(tuple => tuple.Item1.Phone)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => Model.Soul.Phone)
+            @Html.DisplayFor(tuple => tuple.Item1.Phone)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => Model.Soul.Comments)
+            @Html.DisplayNameFor(tuple => tuple.Item1.Comments)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => Model.Soul.Comments)
+            @Html.DisplayFor(tuple => tuple.Item1.Comments)
         </dd>
 
     </dl>
+    <hr />
+    <hr />
+
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(tuple => tuple.Item2.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(tuple => tuple.Item2.Title)
+        </dd>
+    </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Soul.Id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Item1.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
