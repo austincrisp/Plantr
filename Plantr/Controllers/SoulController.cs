@@ -46,7 +46,7 @@ namespace Plantr.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Address,AptNumber,City,Zip,Phone,Comments")] Soul soul)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Address,City,Zip,Phone,Comments")] Soul soul)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Plantr.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Address,AptNumber,City,Zip,Phone,wasVisited")] Soul soul)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Address,AptNumber,City,Zip,Phone,Comments")] Soul soul)
         {
             if (ModelState.IsValid)
             {

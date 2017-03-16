@@ -193,12 +193,25 @@
     <Compile Include="Migrations\201703150211114_AddedComments.Designer.cs">
       <DependentUpon>201703150211114_AddedComments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703151945379_AllowAptNull.cs" />
+    <Compile Include="Migrations\201703151945379_AllowAptNull.Designer.cs">
+      <DependentUpon>201703151945379_AllowAptNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703160208211_ChangedCourseStructure.cs" />
+    <Compile Include="Migrations\201703160208211_ChangedCourseStructure.Designer.cs">
+      <DependentUpon>201703160208211_ChangedCourseStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703160347318_ForeignKeys.cs" />
+    <Compile Include="Migrations\201703160347318_ForeignKeys.Designer.cs">
+      <DependentUpon>201703160347318_ForeignKeys.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Soul.cs" />
+    <Compile Include="Models\SoulCourse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -288,6 +301,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703150211114_AddedComments.resx">
       <DependentUpon>201703150211114_AddedComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703151945379_AllowAptNull.resx">
+      <DependentUpon>201703151945379_AllowAptNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703160208211_ChangedCourseStructure.resx">
+      <DependentUpon>201703160208211_ChangedCourseStructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703160347318_ForeignKeys.resx">
+      <DependentUpon>201703160347318_ForeignKeys.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

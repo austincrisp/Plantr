@@ -1,10 +1,4 @@
-﻿@model Plantr.Models.Soul
-
-@{
-    ViewBag.Title = "Details";
-}
-
-<h2>Details</h2>
+﻿@model Plantr.Models.SoulCourse
 
 <div>
     <h4>Soul</h4>
@@ -19,64 +13,64 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.LastName)
+            @Html.DisplayNameFor(model => Model.Soul.LastName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.LastName)
+            @Html.DisplayFor(model => Model.Soul.LastName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Address)
+            @Html.DisplayNameFor(model => Model.Soul.Address)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Address)
+            @Html.DisplayFor(model => Model.Soul.Address)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.City)
+            @Html.DisplayNameFor(model => Model.Soul.AptNumber)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.City)
+            @Html.DisplayFor(model => Model.Soul.AptNumber)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AptNumber)
+            @Html.DisplayNameFor(model => Model.Soul.City)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AptNumber)
+            @Html.DisplayFor(model => Model.Soul.City)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Zip)
+            @Html.DisplayNameFor(model => Model.Soul.Zip)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Zip)
+            @Html.DisplayFor(model => Model.Soul.Zip)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Phone)
+            @Html.DisplayNameFor(model => Model.Soul.Phone)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Phone)
+            @Html.DisplayFor(model => Model.Soul.Phone)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.wasVisited)
+            @Html.DisplayNameFor(model => Model.Soul.Comments)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.wasVisited)
+            @Html.DisplayFor(model => Model.Soul.Comments)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Soul.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

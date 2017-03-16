@@ -10,21 +10,11 @@ namespace Plantr.Models
         public int Id { get; set; }
 
         // Course List
-        public string CourseOneSent { get; set; }
-        public string CourseOneRec { get; set; }
-        public string CourseTwoSent { get; set; }
-        public string CourseTwoRec { get; set; }
-        public string CourseThreeSent { get; set; }
-        public string CourseThreeRec { get; set; }
-        public string CourseFourSent { get; set; }
-        public string CourseFourRec { get; set; }
-        public string CourseFiveSent { get; set; }
-        public string CourseFiveRec { get; set; }
-        public string CourseSixSent { get; set; }
-        public string CourseSixRec { get; set; }
-        public string CourseSevenSent { get; set; }
-        public string CourseSevenRec { get; set; }
-        public string CourseEightSent { get; set; }
-        public string CourseEightRec { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Question { get; set; }
+        public string AvgCompTime { get; set; }
+
+        public virtual Soul Soul { get; set; }
     }
 }
