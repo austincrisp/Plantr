@@ -205,11 +205,17 @@
     <Compile Include="Migrations\201703160347318_ForeignKeys.Designer.cs">
       <DependentUpon>201703160347318_ForeignKeys.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703161928530_AddedQuestionAndAnswer.cs" />
+    <Compile Include="Migrations\201703161928530_AddedQuestionAndAnswer.Designer.cs">
+      <DependentUpon>201703161928530_AddedQuestionAndAnswer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Answer.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Question.cs" />
     <Compile Include="Models\Soul.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -309,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703160347318_ForeignKeys.resx">
       <DependentUpon>201703160347318_ForeignKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703161928530_AddedQuestionAndAnswer.resx">
+      <DependentUpon>201703161928530_AddedQuestionAndAnswer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

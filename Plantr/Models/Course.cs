@@ -15,6 +15,7 @@ namespace Plantr.Models
         public string Question { get; set; }
         public string AvgCompTime { get; set; }
 
+        public virtual ICollection<Question> Questions { get; set; }
         public virtual Soul Soul { get; set; }
     }
 }
